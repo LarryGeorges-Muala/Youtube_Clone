@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Youtube Clone</title>
+	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBS1txQUtbcUFLW3FBS1txQUtbcUFLW3FBS1txQUtbcUFLW3FBS1txQUtbcUFLW3AAAAAAAAAAAAAAAAFBS1txQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtbcAAAAAFBS1txQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1txQUtbcUFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtbcUFLW3FBS1/xQUtf8UFLX/FBS1/xQUtf///////////xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLW3FBS1txQUtf8UFLX/FBS1/xQUtf8UFLX//////////////////////xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1txQUtbcUFLX/FBS1/xQUtf8UFLX/FBS1//////////////////////8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtbcUFLW3FBS1/xQUtf8UFLX/FBS1/xQUtf///////////xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLW3FBS1txQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1txQUtbcUFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtbcAAAAAFBS1txQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtf8UFLX/FBS1/xQUtbcAAAAAAAAAAAAAAAAUFLW3FBS1txQUtbcUFLW3FBS1txQUtbcUFLW3FBS1txQUtbcUFLW3FBS1txQUtbcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAMADAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="container-fluid" style="text-align: center; margin-top: 5%;">
+		<div class="container">
+			<img src="https://s-media-cache-ak0.pinimg.com/originals/33/91/37/339137bbbfea54c1b595f75f9e828823.jpg" width="200" />
+		</div>
+		
+		<h2>
+			<span>You</span>
+			<span style="background-color: red; color: white; font-weight: bold; padding: 5px; border-radius: 15%;">Tube</span> 
+			Clone
+		<h2>
+		
+		<form action="{% url 'scraper:search' %}" method="POST"> 
+		{% csrf_token %}
+			<input type="text" name="contentSearch" value="" style="vertical-align: middle; width: 290px; outline-color: red;" />
+			<button class="btn btn-danger" type="submit" style="padding: 10px 15px;" style="vertical-align: middle;" ><span class="glyphicon glyphicon-search"></span> Search</button>
+		</form>
+	</div>
+</body>
+
+</html>
+
